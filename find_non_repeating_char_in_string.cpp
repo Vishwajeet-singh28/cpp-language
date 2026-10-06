@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    string str;
+    int i,j;
+    
+    cout<<"enter string: "<<endl;
+    getline(cin,str);
+    
+    for(i=0;i<str.length();i++){
+        int count = 0;
+        
+        for(j=0;j<str.length();j++){
+            if(str[i]==str[j]){
+                count++;
+            }
+        }
+        
+        if(count == 1){
+            cout<<str[i]<<" ";
+        }
+    }
+    return 0;
+}
+
